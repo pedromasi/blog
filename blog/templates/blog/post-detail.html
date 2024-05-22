@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    This Post Title
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "blog/post-detail.css" %}"/>
+{% endblock %}
+    
+{% block content %}
+    <section id="summary">
+        <h2>Post Title</h2>
+        <article>
+            <img src="{% static "blog/images/mountains.jpg" %}" alt="Post Title"/>
+            <address>By Pedro</address>
+            <div>
+                Last updated on <time>May 20th</time>
+            </div>
+        </article>
+    </section>
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perferendis reprehenderit, nisi aut molestiae quae? Reprehenderit quos iste quis, exercitationem cumque repellendus reiciendis ab sequi dolorum alias, minima sint itaque?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perferendis reprehenderit, nisi aut molestiae quae? Reprehenderit quos iste quis, exercitationem cumque repellendus reiciendis ab sequi dolorum alias, minima sint itaque?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perferendis reprehenderit, nisi aut molestiae quae? Reprehenderit quos iste quis, exercitationem cumque repellendus reiciendis ab sequi dolorum alias, minima sint itaque?
+        </p>
+    </main>
+{% endblock %}
